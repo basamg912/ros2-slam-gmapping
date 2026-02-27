@@ -1,0 +1,27 @@
+obstacle_range: 2.5
+raytrace_range: 3.0
+
+# Allbot's footprint : [x,y] start from Right Rear to clock wise. 
+# [[RR], [LR], [LF], [RF]
+# You can see your robot's footprint from Rviz with 'Polygon' topic(/move_base/local_costmap/footprint)
+footprint: [[-0.15, -0.15], [-0.15, 0.15], [0.22, 0.15], [0.22, -0.15]]
+#footprint: [[-0.15, -0.15], [-0.15, 0.15], [0.22, 0.15], [0.25, 0.0], [0.22, -0.15]]
+
+#org inflation_radius: 0.3
+inflation_radius: 1.75
+transform_tolerance: 0.13
+
+observation_sources: scan
+scan:
+  data_type: LaserScan
+  topic: scan
+  marking: true
+  clearing: true
+
+map_type: costmap
+
+#jay 
+
+#always_send_full_costmap: true # default : false
+#track_unknown_space: true # default : false
+unknown_cost_value: 255 #0 #defaul : 255

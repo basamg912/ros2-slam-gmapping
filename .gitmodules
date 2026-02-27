@@ -1,0 +1,9 @@
+[submodule "src/ros2_mpu6050"]
+	path = src/ros2_mpu6050
+	url = https://github.com/kimsniper/ros2_mpu6050.git
+[submodule "src/ydlidar_ros2_ws"]
+	path = src/ydlidar_ros2_ws
+	url = https://github.com/YDLIDAR/ydlidar_ros2_driver.git
+[submodule "src/ydlidar_ros2_driver"]
+	path = src/ydlidar_ros2_driver
+	url = https://github.com/YDLIDAR/ydlidar_ros2_driver.git
